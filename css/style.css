@@ -122,25 +122,107 @@ button:hover {
 }
 
 .button {
- color: var(--color-secondary-text);
+  color: var(--color-secondary-text);
   background-color: var(--color-main-button);
   padding-left: 70px;
   padding-right: 69px;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 30px;
   border-radius: 40px;
   display: inline-block;
 }
 
-/* ====== Main Navigation ====== */
+/* ====== Header ====== */
+
+.main-header {
+  border-top: 1px solid var(--color-main-text);
+  border-bottom: 1px solid var(--color-main-text);
+  box-sizing: border-box;
+}
+
+.main-header--margin {
+  margin-top: 26px;
+}
+
+.main-header__nav {
+  position: relative;
+  display: flex;
+}
+
+.main-nav__link {
+  position: absolute;
+  top: 14px;
+  left: 550px;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-nav-list__li {
+  min-width: 200px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.main-nav-list__li:nth-child(3),
+.main-nav-list__li:nth-child(4) {
+  min-width: 274px;
+}
+
+.main-nav-list__li:nth-child(1),
+.main-nav-list__li:nth-child(2) {
+  text-align: left;
+  min-width: 162px;
+}
+
+.main-nav-list__li:nth-child(4),
+.main-nav-list__li:nth-child(5),
+.main-nav-list__li:nth-child(6) {
+  text-align: right;
+}
+
+.main-nav-list__li:nth-child(2),
+.main-nav-list__li:nth-child(4) {
+  padding-left: 5px;
+}
+
+.main-nav-list__li:nth-child(3) {
+  text-align: center;
+  margin-left: -10px;
+}
+
+.main-nav-list__li:nth-child(5) {
+  padding-left: 4px;
+  min-width: 162px;
+}
+
+.main-nav-list__li:nth-child(6) {
+  margin-left: -1px;
+  min-width: 162px;
+}
 
 .main-nav-list__a {
   color: var(--color-main-text);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* ====== Index ====== */
+/* ====== Main ====== */
 
 /* === Bouquets In Petersburg === */
+
+.bouquets-in-petersburg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  padding-top: 61px;
+}
 
 .bouquets-in-petersburg__title {
   font-family: "Playfair Display", "Times New Roman", serif;
@@ -148,6 +230,11 @@ button:hover {
   font-weight: normal;
   font-size: 44px;
   line-height: 59px;
+  grid-column: 1/2;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .bouquets-in-petersburg__title span {
@@ -160,16 +247,119 @@ button:hover {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
+  grid-column: 1/2;
+  margin-top: 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
+}
+
+.bouquets-in-petersburg__button {
+  margin-top: 28px;
+  grid-column: 1/2;
+}
+
+.bouquets-in-petersburg__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bouquets-in-petersburg__tulips {
+  margin-top: 80px;
+  margin-left: 8px;
+}
+
+.bouquets-in-petersburg__roses {
+  margin-top: 20px;
+  margin-left: 12px;
 }
 
 /* === Advantages === */
 
+.advantages__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.advantages__item {
+  position: relative;
+  width: 30%;
+  margin-right: 49px;
+  margin-bottom: 32px;
+}
+
+.advantages__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.advantages__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item--delivery::before {
+  content: url("../img/icon-delivery.svg");
+  width: 82px;
+  height: 52px;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item--bouquet::before {
+  content: url("../img/icon-bouquet.svg");
+  width: 52px;
+  height: 52px;
+  top: 0;
+  left: 27px;
+}
+
+.advantages__item--photo::before {
+  content: url("../img/icon-camera.svg");
+  width: 59px;
+  height: 52px;
+  top: 0;
+  left: 20px;
+}
+
 .advantages__title {
   font-weight: 500;
   font-size: 16px;
+  padding-left: 99px;
+  margin-top: 0;
+}
+
+.advantages__title--delivery {
+  padding-left: 102px;
+}
+
+.advantages__paragraph {
+  width: 285px;
+  padding-left: 98px;
+  margin-top: -7px;
+}
+
+.advantages__paragraph--delivery {
+  padding-left: 102px;
 }
 
 /* === Popular === */
+
+.popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.popular__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 794px;
+}
 
 .popular__title {
   font-family: "Playfair Display", "Times New Roman", serif;
@@ -178,6 +368,23 @@ button:hover {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.02em;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+}
+
+.popular__wrapper {
+  grid-column: 1/2;
+}
+
+.popular__buttons-wrapper {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  column-gap: 6px;
 }
 
 .popular__h3,
@@ -187,12 +394,19 @@ button:hover {
   line-height: 29px;
 }
 
+.popular__paragraph--padding {
+  padding-top: 7px;
+}
+
 .popular__button {
   padding-left: 105px;
   padding-right: 107px;
+  margin-top: 38px;
 }
 
-.popular__arrow-button {
+.popular__arrow-button,
+.popular__button-right,
+.popular__button-left {
   border: none;
   background-color: var(--color-secondary-text);
 }
@@ -201,14 +415,34 @@ button:hover {
   transform: rotate(180deg);
 }
 
+.popular img {
+  grid-column: 2/3;
+  margin-left: 10px;
+}
+
 /* === Choose Bouquet === */
+
+.choose-bouquet {
+  padding-top: 20px;
+  padding-bottom: 64px;
+}
+
+.choose-bouquet__list {
+  display: flex;
+}
 
 .choose-bouquet__item {
   background-size: cover;
   background-repeat: no-repeat;
   width: 387px;
   min-height: 442px;
+  display: flex;
   border-radius: 10px;
+  margin-right: 20px;
+}
+
+.choose-bouquet__list li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .choose-bouquet__item--wedding {
@@ -226,7 +460,7 @@ button:hover {
 .choose-bouquet__link {
   display: flex;
   width: 387px;
-  min-height: 442px;
+  min-height: inherit;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -260,10 +494,20 @@ button:hover {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .choose-bouquet__paragraph {
   color: var(--color-secondary-text);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 9px;
+  margin-top: 0;
+  margin-left: -10px;
+
 }
 
 /* === Discount === */
@@ -273,8 +517,12 @@ button:hover {
   background-color: var(--color-main-text);
   background-image: url("../img/discount-background-bouquet.jpg");
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 50% 100%;
+  background-position: center right;
+  background-size: 49%;
+  padding-left: 102px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .discount__title {
@@ -285,17 +533,86 @@ button:hover {
   line-height: 59px;
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
-  max-width: 50%;
+  max-width: 448px;
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 0;
 }
 
 .discount__paragraph {
   font-size: 24px;
   line-height: 29px;
   color: var(--color-secondary-text);
-  max-width: 50%;
+  max-width: 378px;
+  padding-bottom: 40px;
+  padding-top: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* === Four steps === */
+
+.four-steps {
+  padding-top: 50px;
+}
+
+.four-steps__list {
+  display: flex;
+  padding-left: 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.four-steps__list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.four-steps__item {
+  width: 278px;
+  margin-right: 28px;
+  text-align: center;
+}
+
+.four-steps__item--clarify {
+  width: 280px;
+}
+
+.four-steps__item--choose {
+  width: 279px;
+  margin-right: 27px;
+}
+
+.four-steps__item::before {
+  position: absolute;
+}
+
+.four-steps__item--choose::before {
+  content: url("../img/icon-choose-catalog.svg");
+  width: 67px;
+  height: 52px;
+  margin-left: -30px;
+}
+
+.four-steps__item--clarify::before {
+  content: url("../img/icon-clarify-details.svg");
+  width: 38px;
+  height: 52px;
+  margin-left: -16px;
+}
+
+.four-steps__item--payment::before {
+  content: url("../img/icon-payment.svg");
+  width: 70px;
+  height: 52px;
+  margin-left: -34px;
+}
+
+.four-steps__item--delivery::before {
+  content: url("../img/icon-delivery.svg");
+  width: 82px;
+  height: 52px;
+  margin-left: -42px;
+}
 
 .four-steps__title {
   font-family: "Playfair Display", "Times New Roman", serif;
@@ -304,13 +621,30 @@ button:hover {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  padding-bottom: 7px;
 }
 
 .four-steps__h3 {
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 45px;
 }
 
-/* === Four steps === */
+.four-steps__paragraph {
+  margin-top: -8px;
+}
+
+.four-steps__paragraph--padding,
+.four-steps__h3--padding {
+  margin-left: 3px;
+}
+
+/* === News === */
 
 .news__paragraph-extra {
   font-family: "Playfair Display", "Times New Roman", serif;
@@ -349,7 +683,7 @@ button:hover {
 
 /* === Find us === */
 
-.main-main__find-us{
+.main-main__find-us {
   position: relative;
 }
 

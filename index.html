@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-<header class="main-header">
+<header class="main-header main-header--margin">
   <div class="container">
     <nav class="main-header__nav main-nav">
-      <a href="index.html">
+      <a class="main-nav__link" href="index.html">
         <img src="img/header-logo.svg" width="100" height="32" alt="Логотип магазина Botanika - цветы в Петербурге.">
       </a>
       <ul class="main-nav__list main-nav-list">
@@ -28,59 +28,70 @@
   <div class="container">
     <h1 class="visually-hidden">Botanika - цветы в Петербурге</h1>
     <section class="bouquets-in-petersburg">
-      <h2 class="bouquets-in-petersburg__title">Авторские букеты <span>в Петербурге</span></h2>
-      <p class="bouquets-in-petersburg__paragraph">Оригинальные свежие букеты с доставкой по всему городу</p>
-      <a class="button" href="#!">Смотреть каталог</a>
-      <img src="img/pink-tulips-bouquet.jpg" width="386" height="404"
+      <div class="bouquets-in-petersburg__wrapper">
+        <h2 class="bouquets-in-petersburg__title">Авторские букеты <span>в Петербурге</span></h2>
+        <p class="bouquets-in-petersburg__paragraph">Оригинальные свежие букеты с доставкой по всему городу</p>
+        <a class="bouquets-in-petersburg__button button" href="#!">Смотреть каталог</a>
+      </div>
+      <img class="bouquets-in-petersburg__tulips" src="img/pink-tulips-bouquet.jpg" width="386" height="404"
            alt="Фото оригинального авторского букета из розовых тюльпанов.">
-      <img src="img/pink-white-roses-bouquet.jpg" width="387" height="420"
+      <img class="bouquets-in-petersburg__roses" src="img/pink-white-roses-bouquet.jpg" width="387" height="420"
            alt="Фото потрясающего авторского букета из розовых и белых роз.">
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <!-- // TODO: Потом здесь будут псевдоэлементы. -->
       <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Быстрая доставка</h3>
-          <p class="advantages__paragraph">Можем собрать букет и передать его в доставку всего за час.</p>
+        <li class="advantages__item advantages__item--delivery">
+          <h3 class="advantages__title advantages__title--delivery">Быстрая доставка</h3>
+          <p class="advantages__paragraph advantages__paragraph--delivery">Можем собрать букет и передать его в доставку
+            всего за час.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--bouquet">
           <h3 class="advantages__title">Всегда свежие цветы</h3>
           <p class="advantages__paragraph">Тщательно следим за состоянием цветов, а опытные флористы отбирают для
             букетов
             каждый цветок.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--photo">
           <h3 class="advantages__title">Отправляем фото цветов</h3>
           <p class="advantages__paragraph">Перед доставкой сделаем фотографию букета и отправим вам.</p>
         </li>
       </ul>
     </section>
     <section class="popular">
-      <h2 class="popular__title">Популярные букеты</h2>
-      <h3 class="popular__h3">Букет «Нежность»</h3>
-      <img src="img/tenderness-bouquet.jpg" width="387" height="438"
-           alt="Фотография букета «Нежность». Потрясающая авторская композиция из роз и других цветов, выполненная в бежевых и белых тонах.">
-      <p class="popular__paragraph">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-      <p class="popular__paragraph">30 × 40 см</p>
-      <p class="popular__paragraph popular__paragraph--font">3600 руб.</p>
-      <a class="button popular__button" href="#!">Заказать</a>
-      <button aria-label="Кнопка назад" class="popular__arrow-button" type="button">
-        <svg aria-hidden="true" focusable="false" class="popular__arrow-svg" width="51" height="16" viewBox="0 0 51 16"
-             fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM51 9H1V7H51V9Z"
-            fill="#AE7C78"/>
-        </svg>
-      </button>
-      <button aria-label="Кнопка вперед" class="popular__arrow-button" type="button">
-        <svg aria-hidden="true" focusable="false" class="popular__arrow-svg popular__arrow-svg--transform" width="51"
-             height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM51 9H1V7H51V9Z"
-            fill="#AE7C78"/>
-        </svg>
-      </button>
+      <div class="popular__container">
+        <h2 class="popular__title">Популярные букеты</h2>
+        <div class="popular__wrapper">
+          <h3 class="popular__h3">Букет «Нежность»</h3>
+          <p class="popular__paragraph">Элегантный букет, который станет отличным подарком на день рождения или
+            юбилей.</p>
+          <p class="popular__paragraph popular__paragraph--padding">30 × 40 см</p>
+          <p class="popular__paragraph popular__paragraph--font">3600 руб.</p>
+          <a class="button popular__button" href="#!">Заказать</a>
+        </div>
+        <img src="img/tenderness-bouquet.jpg" width="387" height="438"
+             alt="Фотография букета «Нежность». Потрясающая авторская композиция из роз и других цветов, выполненная в бежевых и белых тонах.">
+        <div class="popular__buttons-wrapper">
+          <button class="popular__button-left" aria-label="Кнопка назад" class="popular__arrow-button" type="button">
+            <svg aria-hidden="true" focusable="false" class="popular__arrow-svg" width="51" height="16"
+                 viewBox="0 0 51 16"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM51 9H1V7H51V9Z"
+                fill="#AE7C78"/>
+            </svg>
+          </button>
+          <button class="popular__button-right" aria-label="Кнопка вперед" class="popular__arrow-button" type="button">
+            <svg aria-hidden="true" focusable="false" class="popular__arrow-svg popular__arrow-svg--transform"
+                 width="51"
+                 height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM51 9H1V7H51V9Z"
+                fill="#AE7C78"/>
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
     <section class="choose-bouquet">
       <h2 class="visually-hidden">Выбор букета из нашего каталога</h2>
@@ -106,7 +117,7 @@
       </ul>
     </section>
     <section class="discount">
-      <h2 class="discount__title">Скидка 10% на первый заказ</h2>
+      <h2 class="discount__title">Скидка 10% <br>на первый заказ</h2>
       <p class="discount__paragraph">Если заказываете у нас букет впервые — при оформлении заказа введите промокод
         «Botanika2021» и получите скидку
         10%.</p>
@@ -115,19 +126,19 @@
       <h2 class="four-steps__title">4 шага к идеальному букету</h2>
       <!-- // TODO: Потом здесь будут псевдоэлементы. -->
       <ol class="four-steps__list">
-        <li class="four-steps__item">
-          <h3 class="four-steps__h3">Заказ</h3>
-          <p class="four-steps__paragraph">Выберите понравившийся букет из каталога и оформите заказ</p>
+        <li class="four-steps__item four-steps__item--choose">
+          <h3 class="four-steps__h3 four-steps__h3--padding">Заказ</h3>
+          <p class="four-steps__paragraph four-steps__paragraph--padding">Выберите понравившийся букет из каталога и оформите заказ</p>
         </li>
-        <li class="four-steps__item">
+        <li class="four-steps__item four-steps__item--clarify">
           <h3 class="four-steps__h3">Уточнение деталей</h3>
           <p class="four-steps__paragraph">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
         </li>
-        <li class="four-steps__item">
+        <li class="four-steps__item four-steps__item--payment">
           <h3 class="four-steps__h3">Оплата</h3>
           <p class="four-steps__paragraph">Оплатить заказ можно онлайн на сайте или при получении</p>
         </li>
-        <li class="four-steps__item">
+        <li class="four-steps__item four-steps__item--delivery">
           <h3 class="four-steps__h3">Доставка</h3>
           <p class="four-steps__paragraph">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
         </li>
