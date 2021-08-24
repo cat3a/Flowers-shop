@@ -72,7 +72,7 @@
         <img src="img/tenderness-bouquet.jpg" width="387" height="438"
              alt="Фотография букета «Нежность». Потрясающая авторская композиция из роз и других цветов, выполненная в бежевых и белых тонах.">
         <div class="popular__buttons-wrapper">
-          <button class="popular__button-left" aria-label="Кнопка назад" class="popular__arrow-button" type="button">
+          <button class="popular__arrow-button popular__button-left" aria-label="Кнопка назад" type="button">
             <svg aria-hidden="true" focusable="false" class="popular__arrow-svg" width="51" height="16"
                  viewBox="0 0 51 16"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@
                 fill="#AE7C78"/>
             </svg>
           </button>
-          <button class="popular__button-right" aria-label="Кнопка вперед" class="popular__arrow-button" type="button">
+          <button class="popular__arrow-button popular__button-right" aria-label="Кнопка вперед" type="button">
             <svg aria-hidden="true" focusable="false" class="popular__arrow-svg popular__arrow-svg--transform"
                  width="51"
                  height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,11 +124,11 @@
     </section>
     <section class="four-steps">
       <h2 class="four-steps__title">4 шага к идеальному букету</h2>
-      <!-- // TODO: Потом здесь будут псевдоэлементы. -->
       <ol class="four-steps__list">
         <li class="four-steps__item four-steps__item--choose">
           <h3 class="four-steps__h3 four-steps__h3--padding">Заказ</h3>
-          <p class="four-steps__paragraph four-steps__paragraph--padding">Выберите понравившийся букет из каталога и оформите заказ</p>
+          <p class="four-steps__paragraph four-steps__paragraph--padding">Выберите понравившийся букет из каталога и
+            оформите заказ</p>
         </li>
         <li class="four-steps__item four-steps__item--clarify">
           <h3 class="four-steps__h3">Уточнение деталей</h3>
@@ -146,68 +146,76 @@
     </section>
     <section class="news">
       <h2 class="visually-hidden">Новости</h2>
-      <p class="news__paragraph-extra">Следите за нашими новостями</p>
-      <p class="news__paragraph">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-      <ul class="news__list">
-        <li class="news__item">
-          <a class="news__link" href="#!">
-            <svg role="img" aria-label="Мы в Instagram." width="21" height="20" viewBox="0 0 21 20" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.84581 0C2.6218 0 0 2.60401 0 5.80437V14.1971C0 17.3974 2.6218 20 5.84581 20H14.3512C17.5752 20 20.197 17.3974 20.197 14.1971V5.80437C20.197 2.60401 17.5752 0 14.3512 0H5.84581ZM5.84581 1.71935H14.3512C16.6458 1.71935 18.4664 3.52664 18.4664 5.80437V14.1971C18.4664 16.4748 16.6458 18.2807 14.3512 18.2807H5.84581C3.55123 18.2807 1.73203 16.4748 1.73203 14.1971V5.80437C1.73203 3.52664 3.55123 1.71935 5.84581 1.71935ZM15.5189 3.43867C14.8499 3.43867 14.3078 3.97676 14.3078 4.64091C14.3078 5.30507 14.8499 5.84315 15.5189 5.84315C16.188 5.84315 16.73 5.30507 16.73 4.64091C16.73 3.97676 16.188 3.43867 15.5189 3.43867ZM10.0985 4.85061C7.24365 4.85061 4.91107 7.16609 4.91107 10C4.91107 12.8339 7.24365 15.1494 10.0985 15.1494C12.9534 15.1494 15.2874 12.8339 15.2874 10C15.2874 7.16609 12.9534 4.85061 10.0985 4.85061ZM10.0985 6.56996C12.0175 6.56996 13.5553 8.09513 13.5553 10C13.5553 11.9049 12.0175 13.43 10.0985 13.43C8.17955 13.43 6.6431 11.9049 6.6431 10C6.6431 8.09513 8.17955 6.56996 10.0985 6.56996Z"
-                fill="#D89999"/>
-            </svg>
-          </a>
-        </li>
-        <li class="news__item">
-          <a class="news__link" href="#!">
-            <svg role="img" aria-label="Мы в Facebook." width="12" height="20" viewBox="0 0 12 20" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.46041 0C5.45614 0 3.39869 1.65638 3.39869 4.69933V7.32182H0V10.8784H3.39869V20H7.46134V10.8784H10.8506L11.3596 7.32182H7.46134V5.05071C7.46134 4.02128 7.77835 3.31953 9.41206 3.31953H11.4955V0.139979C11.1352 0.0966486 9.89947 0 8.46041 0Z"
-                fill="#D89999"/>
-            </svg>
-          </a>
-        </li>
-        <li class="news__item">
-          <a class="news__link" href="#!">
-            <svg role="img" aria-label="Мы в Twitter." width="26" height="20" viewBox="0 0 26 20" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25.7588 2.36717C24.8116 2.76883 23.7929 3.04029 22.7241 3.16259C23.8149 2.53743 24.6525 1.54801 25.0471 0.36927C24.0262 0.948099 22.8956 1.36795 21.6913 1.59426C20.7278 0.613218 19.3544 0 17.8345 0C14.9158 0 12.5503 2.26041 12.5503 5.04887C12.5503 5.44474 12.5966 5.83021 12.687 6.19951C8.29503 5.98923 4.40126 3.97853 1.79486 0.924148C1.33997 1.66952 1.07939 2.53671 1.07939 3.46218C1.07939 5.21411 2.01193 6.75926 3.43028 7.66504C2.56407 7.63916 1.74915 7.41194 1.03665 7.03349C1.03563 7.05477 1.03563 7.07575 1.03563 7.09687C1.03563 9.54362 2.8574 11.5838 5.27461 12.048C4.83157 12.1634 4.36482 12.2244 3.88283 12.2244C3.54197 12.2244 3.2115 12.1936 2.88828 12.1344C3.56119 14.1402 5.51239 15.6002 7.82521 15.641C6.01517 16.9955 3.73697 17.8022 1.26097 17.8022C0.834721 17.8022 0.413742 17.7783 0 17.7319C2.33958 19.1644 5.11689 20 8.10148 20C17.8212 20 23.1358 12.3067 23.1358 5.63404C23.1358 5.41524 23.1305 5.19793 23.1209 4.9814C24.1529 4.26896 25.0487 3.37993 25.7576 2.36721"
-                fill="#D89999"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <!-- // TODO: Вероятно, придется обернуть это в div. -->
-      <img src="img/wonderful-composition.jpg" width="285" height="220"
-           alt="Фотография чудесной авторской композиции из разнообразных цветов.">
-      <img src="img/roses-greenery-bouquet.jpg" width="285" height="220"
-           alt="Фотография уникального авторского букета из розовых роз, других цветов и зелени.">
-      <img src="img/pink-carnations-bouquet.jpg" width="387" height="460"
-           alt="Фотография потрясающего букета из розовых гвоздик и зелени, обернутого в крафтовую бумагу.">
+      <div class="news__wrapper">
+        <p class="news__paragraph-extra">Следите за нашими новостями</p>
+        <p class="news__paragraph">Подписывайтесь на наши соцсети и узнавайте <br> о новинках и акциях первым.</p>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news__link" href="#!">
+              <svg role="img" aria-label="Мы в Instagram." width="21" height="20" viewBox="0 0 21 20" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.84581 0C2.6218 0 0 2.60401 0 5.80437V14.1971C0 17.3974 2.6218 20 5.84581 20H14.3512C17.5752 20 20.197 17.3974 20.197 14.1971V5.80437C20.197 2.60401 17.5752 0 14.3512 0H5.84581ZM5.84581 1.71935H14.3512C16.6458 1.71935 18.4664 3.52664 18.4664 5.80437V14.1971C18.4664 16.4748 16.6458 18.2807 14.3512 18.2807H5.84581C3.55123 18.2807 1.73203 16.4748 1.73203 14.1971V5.80437C1.73203 3.52664 3.55123 1.71935 5.84581 1.71935ZM15.5189 3.43867C14.8499 3.43867 14.3078 3.97676 14.3078 4.64091C14.3078 5.30507 14.8499 5.84315 15.5189 5.84315C16.188 5.84315 16.73 5.30507 16.73 4.64091C16.73 3.97676 16.188 3.43867 15.5189 3.43867ZM10.0985 4.85061C7.24365 4.85061 4.91107 7.16609 4.91107 10C4.91107 12.8339 7.24365 15.1494 10.0985 15.1494C12.9534 15.1494 15.2874 12.8339 15.2874 10C15.2874 7.16609 12.9534 4.85061 10.0985 4.85061ZM10.0985 6.56996C12.0175 6.56996 13.5553 8.09513 13.5553 10C13.5553 11.9049 12.0175 13.43 10.0985 13.43C8.17955 13.43 6.6431 11.9049 6.6431 10C6.6431 8.09513 8.17955 6.56996 10.0985 6.56996Z"
+                  fill="#D89999"/>
+              </svg>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#!">
+              <svg role="img" aria-label="Мы в Facebook." width="12" height="20" viewBox="0 0 12 20" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.46041 0C5.45614 0 3.39869 1.65638 3.39869 4.69933V7.32182H0V10.8784H3.39869V20H7.46134V10.8784H10.8506L11.3596 7.32182H7.46134V5.05071C7.46134 4.02128 7.77835 3.31953 9.41206 3.31953H11.4955V0.139979C11.1352 0.0966486 9.89947 0 8.46041 0Z"
+                  fill="#D89999"/>
+              </svg>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#!">
+              <svg role="img" aria-label="Мы в Twitter." width="26" height="20" viewBox="0 0 26 20" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.7588 2.36717C24.8116 2.76883 23.7929 3.04029 22.7241 3.16259C23.8149 2.53743 24.6525 1.54801 25.0471 0.36927C24.0262 0.948099 22.8956 1.36795 21.6913 1.59426C20.7278 0.613218 19.3544 0 17.8345 0C14.9158 0 12.5503 2.26041 12.5503 5.04887C12.5503 5.44474 12.5966 5.83021 12.687 6.19951C8.29503 5.98923 4.40126 3.97853 1.79486 0.924148C1.33997 1.66952 1.07939 2.53671 1.07939 3.46218C1.07939 5.21411 2.01193 6.75926 3.43028 7.66504C2.56407 7.63916 1.74915 7.41194 1.03665 7.03349C1.03563 7.05477 1.03563 7.07575 1.03563 7.09687C1.03563 9.54362 2.8574 11.5838 5.27461 12.048C4.83157 12.1634 4.36482 12.2244 3.88283 12.2244C3.54197 12.2244 3.2115 12.1936 2.88828 12.1344C3.56119 14.1402 5.51239 15.6002 7.82521 15.641C6.01517 16.9955 3.73697 17.8022 1.26097 17.8022C0.834721 17.8022 0.413742 17.7783 0 17.7319C2.33958 19.1644 5.11689 20 8.10148 20C17.8212 20 23.1358 12.3067 23.1358 5.63404C23.1358 5.41524 23.1305 5.19793 23.1209 4.9814C24.1529 4.26896 25.0487 3.37993 25.7576 2.36721"
+                  fill="#D89999"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="news__img-wrapper">
+        <img class="news__img-composition" src="img/wonderful-composition.jpg" width="285" height="220"
+             alt="Фотография чудесной авторской композиции из разнообразных цветов.">
+        <img class="news__img-carnations" src="img/pink-carnations-bouquet.jpg" width="387" height="460"
+             alt="Фотография потрясающего букета из розовых гвоздик и зелени, обернутого в крафтовую бумагу.">
+        <img class="news__img-roses" src="img/roses-greenery-bouquet.jpg" width="285" height="220"
+             alt="Фотография уникального авторского букета из розовых роз, других цветов и зелени.">
+      </div>
     </section>
-    <section class="reviews">
+    <section class="reviews reviews--margin">
       <h2 class="reviews__title">Отзывы</h2>
-      <blockquote>
-        <p class="reviews__paragraph">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки.
-          Всем большое
-          спасибо!</p>
-        <cite class="reviews__cite">Марина</cite>
-      </blockquote>
-      <blockquote>
-        <p class="reviews__paragraph">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень
-          понравился, буду ещё
-          заказывать!</p>
-        <cite class="reviews__cite">Татьяна</cite>
-      </blockquote>
-      <blockquote>
-        <p class="reviews__paragraph">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда
-          помогут и точно соберут красивый
-          букет!</p>
-        <cite class="reviews__cite">Ольга</cite>
-      </blockquote>
+      <div class="reviews__wrapper">
+        <blockquote class="reviews__blockquote">
+          <p class="reviews__paragraph">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени
+            доставки.
+            Всем большое
+            спасибо!</p>
+          <cite class="reviews__cite">Марина</cite>
+        </blockquote>
+        <blockquote class="reviews__blockquote">
+          <p class="reviews__paragraph">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет
+            очень
+            понравился, буду ещё
+            заказывать!</p>
+          <cite class="reviews__cite">Татьяна</cite>
+        </blockquote>
+        <blockquote class="reviews__blockquote">
+          <p class="reviews__paragraph">Выбор букетов на любой вкус <br>и цену. Бывают хорошие скидки, <br>а флористы
+            всегда
+            помогут и точно соберут красивый
+            букет!</p>
+          <cite class="reviews__cite">Ольга</cite>
+        </blockquote>
+      </div>
     </section>
   </div>
   <section class="find-us main-main__find-us">
@@ -221,20 +229,20 @@
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__paragraph-extra">Мы ждем вас</p>
       <p class="contacts__paragraph">Приходите к нам:</p>
-      <p class="contacts__paragraph-bold">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
-      <p class="contacts__paragraph">Режим работы:</p>
+      <p class="contacts__paragraph-bold">Санкт-Петербург, <br>ул. Большая Конюшенная, 19</p>
+      <p class="contacts__paragraph contacts__paragraph--margin">Режим работы:</p>
       <p class="contacts__paragraph-bold">Пн-Вск, с 9-00 до 20-00</p>
-      <p class="contacts__paragraph">Позвоните нам:</p>
+      <p class="contacts__paragraph contacts__paragraph--padding">Позвоните нам:</p>
       <a class="contacts__link" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
-      <p class="contacts__paragraph">Напишите нам:</p>
+      <p class="contacts__paragraph contacts__paragraph--write">Напишите нам:</p>
       <a class="contacts__link" href="mailto:info@botanika.ru">info@botanika.ru</a>
     </section>
   </section>
 </main>
 <footer class="main-footer">
-  <div class="container">
+  <div class="container main-footer__wrapper">
     <nav class="main-footer__nav footer-nav">
-      <a href="index.html">
+      <a class="main-footer__link" href="index.html">
         <img src="img/footer-logo.svg" width="100" height="32" alt="Логотип магазина Botanika - цветы в Петербурге.">
       </a>
       <ul class="footer-nav__list footer-nav-list">
