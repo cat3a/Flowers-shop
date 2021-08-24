@@ -439,6 +439,7 @@ button:hover {
   display: flex;
   border-radius: 10px;
   margin-right: 20px;
+  background-color: var(--color-decoration-background);
 }
 
 .choose-bouquet__list li:nth-child(3n) {
@@ -719,32 +720,33 @@ button:hover {
 
 .reviews {
   border: 1px solid var(--color-main-text);
-  box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 45px;
-  padding-left: 45px;
-  padding-right: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reviews__wrapper {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
+  padding-right: 41px;
+  padding-left: 41px;
 }
 
 .reviews__blockquote {
-  max-width: 299px;
-  margin-right: 53px;
+  width: 300px;
+  margin-right: 52px;
   margin-left: 53px;
 }
 
 .reviews__blockquote:nth-of-type(3n+1) {
   margin-left: 0;
-  max-width: 298px;
 }
 
 .reviews__blockquote:first-of-type {
-  max-width: 298px;
   margin-left: 0;
 }
 
