@@ -132,6 +132,14 @@ button:hover {
   display: inline-block;
 }
 
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
 /* ====== Header ====== */
 
 .main-header {
@@ -153,6 +161,16 @@ button:hover {
   position: absolute;
   top: 14px;
   left: 550px;
+}
+
+.main-nav__link:hover img,
+.main-nav-list__a:hover {
+  opacity: 0.7;
+}
+
+.main-nav__link:active img,
+.main-nav-list__a:active {
+  opacity: 0.5;
 }
 
 .main-nav-list {
@@ -411,8 +429,21 @@ button:hover {
   background-color: var(--color-secondary-text);
 }
 
+.popular__arrow-svg path {
+  fill: var(--color-main-text);
+}
+
 .popular__arrow-svg--transform {
   transform: rotate(180deg);
+}
+
+.popular__arrow-button:hover svg path {
+  fill: var(--color-main-button);
+}
+
+.popular__arrow-button:active svg path {
+  fill: var(--color-main-button);
+  opacity: 0.7;
 }
 
 .popular img {
@@ -716,6 +747,14 @@ button:hover {
   grid-row: 1/-1;
 }
 
+.news__link:hover svg {
+  opacity: 0.7;
+}
+
+.news__link:active svg {
+  opacity: 0.5;
+}
+
 /* === Reviews === */
 
 .reviews {
@@ -899,6 +938,16 @@ button:hover {
   padding-top: 20px;
 }
 
+.main-footer__link:hover img,
+.footer-nav-list__a:hover {
+  opacity: 0.7;
+}
+
+.main-footer__link:active img,
+.footer-nav-list__a:active {
+  opacity: 0.5;
+}
+
 /* === Socials === */
 
 .socials__list {
@@ -925,4 +974,12 @@ button:hover {
 
 .socials__img path {
   fill: var(--color-secondary-text);
+}
+
+.socials__link:hover svg {
+  opacity: 0.7;
+}
+
+.socials__link:active svg {
+  opacity: 0.5;
 }
