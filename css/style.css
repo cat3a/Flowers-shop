@@ -455,11 +455,12 @@ button:hover {
 
 .choose-bouquet {
   padding-top: 20px;
-  padding-bottom: 64px;
+  padding-bottom: 44px;
 }
 
 .choose-bouquet__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .choose-bouquet__item {
@@ -469,8 +470,9 @@ button:hover {
   min-height: 442px;
   display: flex;
   border-radius: 10px;
-  margin-right: 20px;
+  margin-right: 19px;
   background-color: var(--color-decoration-background);
+  margin-bottom: 20px;
 }
 
 .choose-bouquet__list li:nth-child(3n) {
