@@ -379,6 +379,12 @@ button:hover {
   max-width: 794px;
 }
 
+.popular__slider {
+  display: flex;
+  justify-content: space-between;
+  min-width: 794px;
+}
+
 .popular__title {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-style: normal;
@@ -823,25 +829,30 @@ button:hover {
 
 .main-main__find-us {
   position: relative;
+  min-height: 645px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
 }
 
 .find-us__img-wrapper {
   background-image: url("../img/map.jpg");
   background-size: cover;
+  height: 100%;
   width: 100%;
-  height: 644px;
+  position: absolute;
+  z-index: -1;
 }
 
 .find-us__img-wrapper iframe {
   width: 100%;
-  height: 644px;
+  height: 100%;
   border: none;
 }
 
 .find-us__contacts {
-  position: absolute;
-  top: 52px;
-  left: 222px;
+  margin-top: 52px;
+  margin-left: 222px;
+  margin-bottom: 70px;
 }
 
 .contacts {
@@ -849,7 +860,7 @@ button:hover {
   padding-right: 35px;
   padding-left: 35px;
   padding-top: 40px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   width: 386px;
   min-height: 520px;
   box-shadow: 0 4px 40px var(--color-contacts-shadow);
